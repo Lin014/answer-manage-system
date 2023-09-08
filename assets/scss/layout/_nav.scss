@@ -1,0 +1,24 @@
+.left-nav {
+    width: 23%;
+
+    ul li {
+        list-style: none;
+    }
+    ul a {
+        color: $black;
+
+        &:hover {
+            color: $black;
+            background-color: $gray-400;
+        }
+    }
+
+    .nav-link.active {
+        color: $success;
+        border-left: 4px solid $success;
+    }
+}
+
+.right-content {
+    width: 77%;
+}

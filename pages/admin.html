@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ANSWER</title>
+</head>
+
+<body>
+
+    <div class="d-flex align-items-stretch">
+        <%- include('./layout/nav'); -%>
+
+            <div class="right-content">
+                <div class="p-32 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <h1 class="fs-4 fw-bold me-5 mb-0">Admin</h1>
+                        <button class="btn-reset d-block d-flex">
+                            <span class="material-icons me-2 text-success fw-bold">add</span>
+                            <span class="fw-bold btn-hover-color-success">Add New Admin</span>
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="p-0 btn-reset me-4"><span
+                                class="d-block material-icons text-black btn-hover-color-success ">search</span></button>
+                        <button class="p-0 btn-reset"><span
+                                class="d-block material-icons text-black btn-hover-color-success">notifications_active</span></button>
+                    </div>
+                </div>
+
+                <div class="w-100 px-4 py-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+    </div>
+
+    <script type="module" src="../assets/js/pages/admin.js"></script>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>
